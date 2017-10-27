@@ -1,0 +1,12 @@
+# This is in attempt to find paths relatively long pt3
+
+# Load graph
+loaded graph marvel
+
+# Find the path
+path from FLARE/ to GENUARDI, MR.:
+FLARE/ to SPIDER-MAN CLONE/BEN with weight 1.000
+SPIDER-MAN CLONE/BEN to SPIDER-MAN/PETER PAR with weight 0.010
+SPIDER-MAN/PETER PAR to CAPTAIN AMERICA with weight 0.007
+CAPTAIN AMERICA to GENUARDI, MR. with weight 0.500
+total cost: 1.517

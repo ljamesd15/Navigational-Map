@@ -1,0 +1,23 @@
+# Tests the specifications of loadGraph and findPath of GraphPaths.java using animals.
+# Also tests to make sure it splits at underscores and reads them properly.
+
+# Load the graph
+loaded graph animals
+
+
+# Find some paths
+path from Dog to Lion:
+Dog to Cat via House_Pet
+Cat to Lion via Feline
+
+path from Mouse to Parrot:
+no path found
+
+path from Mouse to Lion:
+Mouse to Hamster via Rodent
+Hamster to Cat via House_Pet
+Cat to Lion via Feline
+
+unknown character Leopard
+
+path from Parrot to Parrot:

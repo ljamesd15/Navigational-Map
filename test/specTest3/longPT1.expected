@@ -1,0 +1,13 @@
+# This is in attempt to find paths relatively long pt1
+
+# Load graph
+loaded graph marvel
+
+# Find the path
+path from SPARX/AURELLE to SPECTRA/SELENA SLATE:
+SPARX/AURELLE to SERSI/SYLVIA with weight 1.000
+SERSI/SYLVIA to CAPTAIN AMERICA with weight 0.012
+CAPTAIN AMERICA to SPIDER-MAN/PETER PAR with weight 0.007
+SPIDER-MAN/PETER PAR to SLEEPWALKER with weight 0.167
+SLEEPWALKER to SPECTRA/SELENA SLATE with weight 0.500
+total cost: 1.686

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CSE331-17su Campus Paths</string>
+
+    <string name="Reset">Reset</string>
+
+    <string name="FindPath">Find Path</string>
+</resources>

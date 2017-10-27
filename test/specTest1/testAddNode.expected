@@ -1,0 +1,16 @@
+# testAddNode.test file
+# Test that a node can be added to the graph at the appropriate time.
+
+# Creates the test graph.
+created graph testGraph
+
+# Add a character name to see if it gets added.
+added node Thor to testGraph
+added node Spider-Man to testGraph
+added node Hulk to testGraph
+
+# Add a character name which is already in graph.
+The node Spider-Man was unsuccessfully added to testGraph
+
+# Attempt to add a node into a graph which has not been created.
+The graph 'graphDoesNotExist' does not exist.

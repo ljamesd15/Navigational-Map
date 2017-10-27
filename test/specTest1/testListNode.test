@@ -1,0 +1,33 @@
+# testListNodes.test file
+# This file tests to see if Graph.java contains the correct characters.
+
+# Create four graphs
+CreateGraph testGraph1
+CreateGraph testGraph2
+CreateGraph testGraph3
+CreateGraph testGraph4
+
+# Add some edges testing one character doesn't get added twice.
+AddEdge testGraph1 Spider-Man Hulk BookA
+AddEdge testGraph1 Spider-Man Thor BookA
+
+# Add some edges testing one character doesn't get added twice.
+AddEdge testGraph2 Daredevil Deadpool BookB
+AddEdge testGraph2 Daredevil Deadpool BookC
+
+# Add some edges multiple connections from different characters.
+AddEdge testGraph3 Magneto Hulk BookD
+AddEdge testGraph3 Thor Spider-Man BookD
+AddEdge testGraph3 Daredevil Thor BookD
+AddEdge testGraph3 Hulk Deadpool BookD
+AddEdge testGraph3 Thor Spider-Man BookD
+AddEdge testGraph3 Deadpool Thor BookD
+
+# Print out the nodes from these three graphs
+ListNodes testGraph1
+ListNodes testGraph2
+ListNodes testGraph3
+ListNodes testGraph4
+
+# Attempt to list nodes on a graph which does not exist.
+ListNodes graphDoesNotExist

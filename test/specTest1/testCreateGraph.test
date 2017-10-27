@@ -1,0 +1,7 @@
+# testCreateGraph.test file
+# Tests that a graph can be created.
+
+# Creates 3 different graphs.
+CreateGraph graph1
+CreateGraph graph2
+CreateGraph graph3

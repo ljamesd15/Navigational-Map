@@ -1,0 +1,28 @@
+# Testing the specifications using pac12_v2.tsv file
+
+# Load the graph.
+LoadGraph pac12 pac12_v2.tsv
+
+# Find a normal path.
+FindPath pac12 Huskies Cougars
+
+# Find a path with more edges but smaller cost.
+FindPath pac12 Huskies Ducks
+
+# Find a path with equal cost but lexicographically shorter.
+FindPath pac12 Huskies Trojans
+
+# Find a path where start and target node are the same
+FindPath pac12 Huskies Huskies
+
+# Attempt to find path which does not exist.
+FindPath pac12 Huskies Utes
+
+# Find path where one character doesn't exist.
+FindPath pac12 Huskies Brown_University
+
+# Find path where both characters don't exist.
+FindPath pac12 Western_Washington Brown_University
+
+# Find a path on a graph that does not exist.
+FindPath graphDoesNotExist Huskies Huskies

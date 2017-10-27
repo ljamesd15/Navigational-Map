@@ -1,0 +1,40 @@
+# testAddEdge.test file
+# Test that an edge is created at the appropriate time.
+
+# Creating graph
+CreateGraph testGraph
+
+# Initializing some characters
+AddNode testGraph Spider-Man
+AddNode testGraph Hulk
+
+# Adding edges which should succeed.
+AddEdge testGraph Spider-Man Hulk Book1
+AddEdge testGraph Spider-Man Thor Book1
+AddEdge testGraph Daredevil Hulk Book1
+AddEdge testGraph Deadpool Magneto Book2
+AddEdge testGraph Spider-Man Thor Book2
+AddEdge testGraph Daredevil Hulk Book2
+
+# Adding edges which shouldn't succeed
+AddEdge testGraph Spider-Man Hulk Book1
+AddEdge testGraph Deadpool Magneto Book2
+
+# Create a second graph
+CreateGraph testGraph2
+
+# Initializing some more characters
+AddNode testGraph2 Magneto
+AddNode testGraph2 Thor
+
+# Adding edge which all should succeed.
+AddEdge testGraph2 Thor Magneto Book3
+AddEdge testGraph2 Thor Hulk Book3
+AddEdge testGraph2 Magneto Spider-Man Book3
+AddEdge testGraph2 Hulk Spider-Man Book3
+AddEdge testGraph2 Deadpool Daredevil Book4
+
+# Adding edges which should fail
+AddEdge testGraph2 Magneto Spider-Man Book3
+AddEdge testGraph2 Deadpool Daredevil Book4
+AddEdge graphDoesNotExist DeadPool Daredevil Book1

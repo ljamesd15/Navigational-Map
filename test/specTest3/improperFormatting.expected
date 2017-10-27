@@ -1,0 +1,7 @@
+# Improper formatting tests.
+
+graph improperSpacing.tsv could not be loaded due to formatting issues.
+
+graph improperTokensPerLine.tsv could not be loaded due to formatting issues.
+
+thisFileDoesNotExist.tsv does not exist.

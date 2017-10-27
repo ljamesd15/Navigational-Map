@@ -1,0 +1,40 @@
+# Testing the specifications using pac12_v2.tsv file
+
+# Load the graph.
+loaded graph pac12
+
+# Find a normal path.
+path from Huskies to Cougars:
+Huskies to Cougars with weight 0.333
+total cost: 0.333
+
+# Find a path with more edges but smaller cost.
+path from Huskies to Ducks:
+Huskies to Cougars with weight 0.333
+Cougars to Ducks with weight 0.500
+total cost: 0.833
+
+# Find a path with equal cost but lexicographically shorter.
+path from Huskies to Trojans:
+Huskies to Bears with weight 1.000
+Bears to Bruins with weight 0.333
+Bruins to Trojans with weight 0.333
+total cost: 1.667
+
+# Find a path where start and target node are the same
+path from Huskies to Huskies:
+total cost: 0.000
+
+# Attempt to find path which does not exist.
+path from Huskies to Utes:
+no path found
+
+# Find path where one character doesn't exist.
+unknown character Brown University
+
+# Find path where both characters don't exist.
+unknown character Western Washington
+unknown character Brown University
+
+# Find a path on a graph that does not exist.
+The graph 'graphDoesNotExist' does not exist.

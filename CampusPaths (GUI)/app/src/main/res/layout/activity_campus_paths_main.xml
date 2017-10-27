@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ljd22.Campuspaths.CampusPathsMainActivity">
+
+    <LinearLayout
+        android:id="@+id/BigLayout"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="0dp"
+
+        android:background="#2B0033"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:baselineAligned="true">
+
+
+        <LinearLayout
+            android:id="@+id/MapContainer"
+
+            android:layout_width="match_parent"
+            android:layout_height="280dp">
+
+            <ljd22.Campuspaths.DrawView
+                android:id="@+id/imageView"
+
+                app:layout_constraintHorizontal_bias="0.0"
+                app:srcCompat="@drawable/campus_map_android"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:adjustViewBounds="true"
+                android:fillViewport="true"
+                android:scaleType="fitCenter" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/FromToBoxes"
+
+            app:layout_constraintBottom_toTopOf="@+id/BottomButtons"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            android:layout_width="wrap_content"
+            android:layout_height="260dp"
+            android:layout_marginTop="5dp"
+
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:paddingStart="5dp"
+
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <ListView
+                android:id="@+id/FromBox"
+
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+
+                android:background="#FFFFFF"
+                android:visibility="visible" />
+
+            <ListView
+                android:id="@+id/ToBox"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+
+                android:background="#FFFFFF"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/BottomButtons"
+
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_gravity="bottom"
+            android:background="#D4AF37">
+
+            <Button
+                android:id="@+id/ResetButton"
+
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:paddingLeft="8dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingRight="8dp"
+
+                android:text="@string/Reset"
+                android:visibility="visible"/>
+
+            <Button
+                android:id="@+id/FindPathButton"
+
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:paddingLeft="8dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingRight="8dp"
+
+                android:text="@string/FindPath"
+                android:visibility="visible"
+            />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

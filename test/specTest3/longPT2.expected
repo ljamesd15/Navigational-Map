@@ -1,0 +1,12 @@
+# This is in attempt to find paths relatively long pt2
+
+# Load graph
+loaded graph marvel
+
+# Find the path
+path from IKARYS to TERMINUS:
+IKARYS to MEDUSA/MEDUSALITH AM with weight 1.000
+MEDUSA/MEDUSALITH AM to HUMAN TORCH/JOHNNY S with weight 0.011
+HUMAN TORCH/JOHNNY S to SHE-HULK/JENNIFER WA with weight 0.008
+SHE-HULK/JENNIFER WA to TERMINUS with weight 0.250
+total cost: 1.269

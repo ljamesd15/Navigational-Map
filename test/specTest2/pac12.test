@@ -1,0 +1,28 @@
+# Tests the specifications of loadGraph and findPath of GraphPaths.java using colleges.
+
+# Load the graph
+LoadGraph colleges pac12_v1.tsv
+
+
+#Find some paths
+
+# First simply find a path
+FindPath colleges Huskies Bruins
+
+# Find a path which has two equal lengths. We want lexicographically shorter path.
+FindPath colleges Huskies Trojans
+
+# Attempt to find a path where none exists.
+FindPath colleges Huskies Utes
+
+# Find a path where the start and target node are the same.
+FindPath colleges Huskies Huskies
+
+# Find a path where one of the colleges is not in the graph.
+FindPath colleges Huskies Brown_University
+
+# Find a path where neither of the colleges are in the graph.
+FindPath colleges Western_Washington Brown_University
+
+# Find a path with a character that has an underscore in its name
+FindPath colleges Bears Wildcats

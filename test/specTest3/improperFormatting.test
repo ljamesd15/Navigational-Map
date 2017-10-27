@@ -1,0 +1,7 @@
+# Improper formatting tests.
+
+LoadGraph improperSpace improperSpacing.tsv
+
+LoadGraph improperToken improperTokensPerLine.tsv
+
+LoadGraph improperFile thisFileDoesNotExist.tsv

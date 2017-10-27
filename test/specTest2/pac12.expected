@@ -1,0 +1,37 @@
+# Tests the specifications of loadGraph and findPath of GraphPaths.java using colleges.
+
+# Load the graph
+loaded graph colleges
+
+
+#Find some paths
+
+# First simply find a path
+path from Huskies to Bruins:
+Huskies to Cardinals via Best
+Cardinals to Bruins via California
+
+# Find a path which has two equal lengths. We want lexicographically shorter path.
+path from Huskies to Trojans:
+Huskies to Cardinals via Best
+Cardinals to Bruins via California
+Bruins to Trojans via South
+
+# Attempt to find a path where none exists.
+path from Huskies to Utes:
+no path found
+
+# Find a path where the start and target node are the same.
+path from Huskies to Huskies:
+
+# Find a path where one of the colleges is not in the graph.
+unknown character Brown University
+
+# Find a path where neither of the colleges are in the graph.
+unknown character Western Washington 
+unknown character Brown University
+
+# Find a path with a character that has an underscore in its name
+path from Bears to Wildcats:
+Bears to Bruins via California
+Bruins to Wildcats via South

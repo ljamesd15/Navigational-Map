@@ -1,0 +1,14 @@
+Dog	Canine
+Dog	House_Pet
+Cat	Feline
+Cat	House_Pet
+Wolf	Canine
+Wolf	Predator
+Lion	Predator
+Lion	Feline
+Fish	House_Pet
+Fish	Prey
+Mouse	Rodent
+Hamster	Rodent
+Hamster	House_Pet
+Parrot	Bird

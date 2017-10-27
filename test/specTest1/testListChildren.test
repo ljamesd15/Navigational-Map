@@ -1,0 +1,34 @@
+# testListChildren.test file
+# This tests whether Graph.java correctly stores the connections of the
+# 	characters.
+
+# Create three graphs
+CreateGraph testGraph1
+CreateGraph testGraph2
+CreateGraph testGraph3
+
+# Add some edges testing one character doesn't get added twice.
+AddEdge testGraph1 Spider-Man Hulk BookA
+AddEdge testGraph1 Spider-Man Thor BookA
+
+# Add some edges testing one character doesn't get added twice.
+AddEdge testGraph2 Daredevil Deadpool BookB
+AddEdge testGraph2 Daredevil Deadpool BookC
+
+# Add some edges multiple connections from different characters.
+AddEdge testGraph3 Magneto Hulk BookD
+AddEdge testGraph3 Thor Spider-Man BookD
+AddEdge testGraph3 Daredevil Thor BookD
+AddEdge testGraph3 Hulk Deadpool BookD
+AddEdge testGraph3 Thor Spider-Man BookD
+AddEdge testGraph3 Deadpool Thor BookD
+
+# Print out the children nodes from each graph
+ListChildren testGraph1 Spider-Man
+ListChildren testGraph2 Daredevil
+ListChildren testGraph2 Deadpool
+ListChildren testGraph3 Thor
+ListChildren testGraph3 Hulk
+
+# Attempt to get children from a graph which has not been created.
+ListChildren graphDoesNotExist Hulk

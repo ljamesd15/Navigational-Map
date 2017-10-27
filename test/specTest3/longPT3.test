@@ -1,0 +1,7 @@
+# This is in attempt to find paths relatively long pt3
+
+# Load graph
+LoadGraph marvel marvel.tsv
+
+# Find the path
+FindPath marvel FLARE/ GENUARDI,_MR.

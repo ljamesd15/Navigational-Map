@@ -1,0 +1,17 @@
+# Tests the specifications of loadGraph and findPath of GraphPaths.java using animals.
+# Also tests to make sure it splits at underscores and reads them properly.
+
+# Load the graph
+LoadGraph animals animals_v1.tsv
+
+
+# Find some paths
+FindPath animals Dog Lion
+
+FindPath animals Mouse Parrot
+
+FindPath animals Mouse Lion
+
+FindPath animals Leopard Dog
+
+FindPath animals Parrot Parrot

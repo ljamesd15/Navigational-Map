@@ -1,0 +1,5 @@
+# Load the Marvel data set and search for an existing path.
+
+LoadGraph marvel marvel.tsv
+
+FindPath marvel OLD_SKULL PHARAOH_RAMA-TUT

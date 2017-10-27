@@ -1,0 +1,40 @@
+# testAddEdge.test file
+# Test that an edge is created at the appropriate time.
+
+# Creating graph
+created graph testGraph
+
+# Initializing some characters
+added node Spider-Man to testGraph
+added node Hulk to testGraph
+
+# Adding edges which should succeed.
+added edge Book1 from Spider-Man to Hulk in testGraph
+added edge Book1 from Spider-Man to Thor in testGraph
+added edge Book1 from Daredevil to Hulk in testGraph
+added edge Book2 from Deadpool to Magneto in testGraph
+added edge Book2 from Spider-Man to Thor in testGraph
+added edge Book2 from Daredevil to Hulk in testGraph
+
+# Adding edges which shouldn't succeed
+The edge Book1 from Spider-Man to Hulk was unsuccessfully added to testGraph
+The edge Book2 from Deadpool to Magneto was unsuccessfully added to testGraph
+
+# Create a second graph
+created graph testGraph2
+
+# Initializing some more characters
+added node Magneto to testGraph2
+added node Thor to testGraph2
+
+# Adding edge which all should succeed.
+added edge Book3 from Thor to Magneto in testGraph2
+added edge Book3 from Thor to Hulk in testGraph2
+added edge Book3 from Magneto to Spider-Man in testGraph2
+added edge Book3 from Hulk to Spider-Man in testGraph2
+added edge Book4 from Deadpool to Daredevil in testGraph2
+
+# Adding edges which should fail
+The edge Book3 from Magneto to Spider-Man was unsuccessfully added to testGraph2
+The edge Book4 from Deadpool to Daredevil was unsuccessfully added to testGraph2
+The graph 'graphDoesNotExist' does not exist.
